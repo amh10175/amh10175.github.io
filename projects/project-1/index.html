@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PaTracks</title>
     <style>
-     #primary-nav ul { padding-left: 0; }
-        #primary-nav li { 
+     #primary-nav ul { 
+        padding-left: 0;
+        background-color: #8C2639;
+        justify-content: flex-end;
+        }
+    #primary-nav li { 
         list-style: none; 
         display: inline-block;
         }
-        #primary-nav a { 
-        background-color: #8C2639;
+    #primary-nav a { 
         display: inline-block; 
         padding: 1em;
         } 
@@ -30,9 +33,9 @@
     .grid > div {
       background: #eaeaea;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 200px;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 800px;
       margin: 10px;
       flex: 1 1 200px;
     }
@@ -50,21 +53,49 @@
     </nav>
     <main>
         <h1>Central PA Racing</h1>
-        <img src="tylar.svg" alt="tylar">
+        <img src="../../images/tylar.svg" alt="tylar">
         <h2>Race Tracks</h2>
         <div class="grid">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div>10</div>
-            <div>11</div>
-            <div>12</div>
+            <div>
+                <img src="../../images/grove.svg" alt="Track 1">
+                <h3>William's Grove Speeday</h3>
+            </div>
+            <div>
+                <img src="../../images/path.svg" alt="Track 2">
+                <h3>Path Valley Speedway</h3>
+            </div>
+            <div>
+                <img src="../../images/lindas.svg" alt="Track 3">
+                <h3>Linda's Speedway</h3>
+            </div>
+            <div>
+                <img src="../../images/lincoln.svg" alt="Track 4">
+                <h3>Lincoln Speedway</h3>
+            </div>
+            <div>
+                <img src="../../images/baps.svg" alt="Track 5">
+                <h3>BAPS Speedway</h3>
+            </div>
+            <div>
+                <img src="../../images/clyde.svg" alt="Track 6">
+                <h3>Clyde Martin Memorial Speedway</h3>
+            </div>
+            <div>
+                <img src="../../images/port.svg" alt="Track 7">
+                <h3>Port Royal Speedway</h3>
+            </div>
+            <div>
+                <img src="../../images/mcgrew.svg" alt="Track 8">
+                <h3>McGrewbid Motoplex</h3>
+            </div>
+            <div>
+                <img src="../../images/shellys.svg" alt="Track 9">
+                <h3>Shellhammer Dirt Track</h3>
+            </div>
+            <div>
+                <img src="../../images/selinsgrove.svg" alt="Track 10">
+                <h3>Selinsgrove Speedway</h3>
+            </div>
         </div>
     </main>
 </body>
