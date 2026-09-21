@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PaTracks</title>
+    <link rel="icon" type="image/x-icon" href="/images/flag.ico">
     <style>
      #primary-nav ul { 
-        padding-left: 0;
+        margin: 0;
+        padding: 0;
         background-color: #8C2639;
-        justify-content: flex-end;
+        text-align: right;
         }
     #primary-nav li { 
         list-style: none; 
@@ -24,8 +26,35 @@
         background-color: #FCEEC5;
     }
     main{
-        margin: 3em auto;
-        max-width: 56em;
+        margin: 50px auto;
+        max-width: 1400px;
+    }
+    .intro ul {
+        margin: 0;
+        padding: 0;
+        background-color: #155A9C;
+    }
+    .intro {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #155A9C;
+        padding: 50px;
+    }
+    .intro h1, .intro p {
+        color: #fff;
+    }
+    .intro img {
+    width: 700px;
+    }
+    h2 {
+        font-family: 'Arial', sans-serif;
+        color: #8C2639;
+        text-align: center;
+    }
+    h3 {
+        font-family: 'Arial', sans-serif;
+        color: #8C2639;
     }
     .grid {
       display: flex;
@@ -36,9 +65,20 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      height: 800px;
+      height: 600px;
       margin: 10px;
-      flex: 1 1 200px;
+      flex: 0 0 calc(50% - 20px);
+    }
+    .grid > div a {
+      display: block;
+      width: 100%;
+      background: #155A9C;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.75rem 1rem;
+      box-sizing: border-box;
+      text-align: left;
+      margin-top: auto;
     }
     </style>
 </head>
@@ -53,8 +93,11 @@
         </div>
     </nav>
     <main>
-        <h1>Central PA Racing</h1>
-        <img src="../../images/tylar.svg" alt="tylar">
+        <div class="intro">
+            <h1>Central PA Racing</h1>
+            <p>Explore 10 legendary tracks across Central Pennsylvania.</p>
+            <img src="../../images/tylar.svg" alt="tylar">
+        </div>
         <h2>Race Tracks</h2>
         <div class="grid">
             <div>
