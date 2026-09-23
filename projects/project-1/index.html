@@ -6,6 +6,12 @@
     <title>PaTracks</title>
     <link rel="icon" type="image/x-icon" href="../../images/flag.ico">
     <style>
+    @font-face {
+        font-family: "Jomhuria";
+        src: url("../../fonts/Jomhuria-Regular.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+    }
      #primary-nav ul { 
         margin: 0;
         padding: 0;
@@ -18,7 +24,10 @@
         }
     #primary-nav a { 
         display: inline-block; 
-        padding: 1em;
+        padding: 20px;
+        color:#FCEEC5;
+        font-family: "Jomhuria", sans-serif;
+        font-size: 40px;
         } 
     body {
         margin: 0;
@@ -53,14 +62,27 @@
     border-radius: 10px;
     filter: drop-shadow(15px 15px 10px rgba(0, 0, 0, 0.565));
     }
+    h1 {
+        font-family: "Jomhuria", sans-serif;
+        font-size: 200px;
+    }
     h2 {
-        font-family: 'Arial', sans-serif;
+        font-family: 'Jomhuria', sans-serif;
         color: #8C2639;
         text-align: center;
+        font-size: 120px;
     }
     h3 {
-        font-family: 'Arial', sans-serif;
+        font-family: 'Jomhuria', sans-serif;
         color: #8C2639;
+        font-size: 70px;
+    }
+    h4 {
+        font-size: 50px;
+    }
+    p  {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
     }
     .grid {
       display: flex;
@@ -76,20 +98,60 @@
       box-sizing: border-box;
       flex: 0 0 calc(50% - 10px);
     }
-    .grid > div a {
-      display: block;
-      width: 100%;
-      background: #155A9C;
-      color: #fff;
-      text-decoration: none;
-      padding: 0.75rem 1rem;
-      box-sizing: border-box;
-      text-align: left;
-      margin-top: auto;
-      filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.565));
-    }
     .grid > div img{
         filter: drop-shadow(5px 0px 5px rgba(0, 0, 0, 0.565));
+    }
+    .track-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #155A9C;
+    padding: 0.75rem 1rem;
+    box-sizing: border-box;
+    margin-top: auto;
+    gap: 20px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.565));
+}
+
+.learn-more {
+    flex: 1;
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-link img {
+    display: block;
+}
+    .map {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #1597A8;
+        padding: 50px;
+        margin: 50px 0;
+    }
+    .map-text {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+    .map img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    filter: drop-shadow(15px 15px 10px rgba(0, 0, 0, 0.565));
     }
     </style>
 </head>
@@ -118,73 +180,146 @@
                 <h3>William's Grove Speeday</h3>
                 <h4>Mechaniscburg</h4>
                 <p>William's Grove opened in 1939 and is one of the oldest continuously operating dirt tracks in the United States. It has become especially famous for its long history of sprint car racing.</p>
-                <a href="https://www.williamsgrove.com/" target="_blank">Learn More</a>
-                <a href="https://www.instagram.com/williamsgrovespeedway/">
-                <img src="../../images/instagram-white-icon.webp" width="20px" height="20px"> </a>
+                <div class="track-actions">
+                    <a class="learn-more" href="https://www.williamsgrove.com/" target="_blank">Learn More</a>
+                    <a class="social-link" href="https://www.instagram.com/williamsgrovespeedway/">
+                        <img src="../../images/instagram-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    <a class="social-link" href="https://www.facebook.com/williamsgrove1/">
+                        <img src="../../images/facebook-app-round-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    </a>
+                </div>
             </div>
             <div>
                 <img src="../../images/path.svg" alt="Track 2">
                 <h3>Path Valley Speedway</h3>
                 <h4>Spring Run</h4>
                 <p>Path Valley is unusual because it features a very tight, high-banked dirt oval, creating exciting racing where drivers often run extremely close together. The track has also hosted racing for a wide variety of divisions.</p>
-                <a href="http://www.pathvalley.com/" target="_blank">Learn More</a>
+                <div class="track-actions">
+                    <a class="learn-more" href="http://www.pathvalley.com/" target="_blank">Learn More</a>
+                    <a class="social-link" href="https://www.instagram.com/pathvalleyspeedway/">
+                        <img src="../../images/instagram-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    <a class="social-link" href="https://www.facebook.com/p/Path-Valley-Speedway-61564142866830/">
+                        <img src="../../images/facebook-app-round-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    </a>
+                </div>
             </div>
             <div>
                 <img src="../../images/lindas.svg" alt="Track 3">
                 <h3>Linda's Speedway</h3>
                 <h4>Jonestown</h4>
                 <p>Linda’s Speedway is a quarter-mile dirt oval, making it significantly smaller than many of Pennsylvania’s major dirt tracks. Its compact size creates close, fast-paced racing where drivers have little room for error.</p>
-                <a href="https://www.lindasspeedway.com/" target="_blank">Learn More</a>
+                <div class="track-actions">
+                    <a class="learn-more" href="https://www.lindasspeedway.com/" target="_blank">Learn More</a>
+                    <a class="social-link" href="https://www.instagram.com/thelindasspeedway">
+                        <img src="../../images/instagram-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    <a class="social-link" href="https://www.facebook.com/LindasSpeedway">
+                        <img src="../../images/facebook-app-round-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    </a>
+                </div>
             </div>
             <div>
                 <img src="../../images/lincoln.svg" alt="Track 4">
                 <h3>Lincoln Speedway</h3>
                 <h4>Abbotstown</h4>
                 <p>Lincoln Speedway is nicknamed “The Pigeon Hills” because of its location in the Pigeon Hills of Adams County. The track is particularly known for its high-speed sprint car racing.</p>
-                <a href="https://www.lincolnspeedway.com/" target="_blank">Learn More</a>
+                <div class="track-actions">
+                    <a class="learn-more" href="https://www.lincolnspeedway.com/" target="_blank">Learn More</a>
+                    <a class="social-link" href="https://www.instagram.com/officiallincolnspeedway/">
+                        <img src="../../images/instagram-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    <a class="social-link" href="https://www.facebook.com/lincolnspeedway">
+                        <img src="../../images/facebook-app-round-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    </a>
+                </div>
             </div>
             <div>
                 <img src="../../images/baps.svg" alt="Track 5">
                 <h3>BAPS Speedway</h3>
                 <h4>York Haven</h4>
                 <p>BAPS Motor Speedway was formerly known as Susquehanna Speedway before being renamed after BAPS Motor Speedway became the track’s new identity. It features a challenging dirt surface and hosts several different racing divisions.</p>
-                <a href="https://www.bapsmotorspeedway.com/" target="_blank">Learn More</a>
+                <div class="track-actions">
+                    <a class="learn-more" href="https://www.bapsmotorspeedway.com/" target="_blank">Learn More</a>
+                    <a class="social-link" href="https://www.instagram.com/bapsmotorspeedway">
+                        <img src="../../images/instagram-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    <a class="social-link" href="https://www.facebook.com/BAPSMotorSpeedway/">
+                        <img src="../../images/facebook-app-round-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    </a>
+                </div>
             </div>
             <div>
                 <img src="../../images/clyde.svg" alt="Track 6">
                 <h3>Clyde Martin Memorial Speedway</h3>
                 <h4>Newmanstown</h4>
                 <p>Clyde Martin Memorial Speedway is dedicated to micro racing rather than full-size race cars. It has helped introduce many young drivers to competitive racing before they move into larger divisions.</p>
-                <a href="https://www.clydemartinspeedway.com/" target="_blank">Learn More</a>
+                <div class="track-actions">
+                    <a class="learn-more" href="https://www.clydemartinspeedway.com/" target="_blank">Learn More</a>
+                    <a class="social-link" href="https://www.instagram.com/clydemartinmemorial/">
+                        <img src="../../images/instagram-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    <a class="social-link" href="https://www.facebook.com/profile.php?id=100057218809532">
+                        <img src="../../images/facebook-app-round-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    </a>
+                </div>
             </div>
             <div>
                 <img src="../../images/port.svg" alt="Track 7">
                 <h3>Port Royal Speedway</h3>
                 <h4>Port Royal</h4>
                 <p>Port Royal is nicknamed “The Speed Palace.” Its long history dates back to 1938, and it has become one of the premier sprint car racing venues in Pennsylvania.</p>
-                <a href="https://www.portroyalspeedway.com/" target="_blank">Learn More</a>
+                <div class="track-actions">
+                    <a class="learn-more" href="https://www.portroyalspeedway.com/" target="_blank">Learn More</a>
+                    <a class="social-link" href="https://www.instagram.com/thespeedpalace/">
+                        <img src="../../images/instagram-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    <a class="social-link" href="https://www.facebook.com/PortRoyalMedia/">
+                        <img src="../../images/facebook-app-round-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    </a>
+                </div>
             </div>
             <div>
                 <img src="../../images/mcgrew.svg" alt="Track 8">
                 <h3>McGrewbid Motoplex</h3>
                 <h4>York Haven</h4>
                 <p>McGrewBid Motoplex Speedway is a dirt track known for its fast-paced racing and variety of motorsports events. A unique feature is its compact, high-speed layout, which creates close and exciting racing.</p>
-                <a href="https://www.mcgrewbidmotoplex.com/" target="_blank">Learn More</a>
+                <div class="track-actions">
+                    <a class="learn-more" href="https://www.mcgrewbidmotoplex.com/" target="_blank">Learn More</a>
+                    <a class="social-link" href="https://www.instagram.com/mcgrewbidmotoplex/">
+                        <img src="../../images/instagram-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    <a class="social-link" href="https://www.facebook.com/mcgrewbidmotoplex/">
+                        <img src="../../images/facebook-app-round-white-icon.webp" width="20px" height="20px" alt="Facebook">
+                    </a>
+                </div>
             </div>
             <div>
                 <img src="../../images/shellys.svg" alt="Track 9">
                 <h3>Shellhammer Dirt Track</h3>
                 <h4>Newberry</h4>
                 <p>A fast-paced dirt track known for “Wingless Wednesdays” and a welcoming atmosphere, bringing local drivers and racing fans together for a night at the track.</p>
-                <a href="https://shellhammers.proboards.com/" target="_blank">Learn More</a>
+                <div class="track-actions">
+                    <a class="learn-more" href="https://shellhammers.proboards.com/?utm_source=google&utm_medium=organic" target="_blank">Learn More</a>
+                    <a class="social-link" href="https://www.facebook.com/groups/shellhammerdirttrack">
+                        <img src="../../images/facebook-app-round-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    </a>
+                </div>
             </div>
             <div>
                 <img src="../../images/selinsgrove.svg" alt="Track 10">
                 <h3>Selinsgrove Speedway</h3>
                 <h4>Selinsgrove</h4>
                 <p>Selinsgrove Speedway is famous for its large half-mile dirt oval, which makes it one of the faster and more challenging dirt tracks in Pennsylvania. It has a particularly strong connection to sprint car racing.</p>
-                <a href="https://www.raceselinsgrove.com/" target="_blank">Learn More</a>
+                <div class="track-actions">
+                    <a class="learn-more" href="https://www.raceselinsgrove.com/" target="_blank">Learn More</a>
+                    <a class="social-link" href="https://www.instagram.com/raceselinsgrove/">
+                        <img src="../../images/instagram-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    <a class="social-link" href="https://www.facebook.com/p/Selinsgrove-Speedway-Raceway-Park-61568463937688/">
+                        <img src="../../images/facebook-app-round-white-icon.webp" width="20px" height="20px" alt="Instagram">
+                    </a>
+                </div>
             </div>
+        </div>
+        <div class="map">
+            <div class="map-text">
+            <h1>Race Track Map</h1>
+            <p>Find your local track</p>
+            </div>    
+            <img src="../../images/map.svg" alt="Race Track Map" >
         </div>
     </main>
 </body>
