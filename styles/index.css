@@ -47,6 +47,7 @@
         color: #fff;
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
     .intro img {
     width: 100%;
@@ -58,6 +59,7 @@
         font-family: "Jomhuria", sans-serif;
         font-size: 200px;
         letter-spacing: 6px;
+        text-align: center;
     }
     h2 {
         font-family: 'Jomhuria', sans-serif;
@@ -146,6 +148,7 @@
         color: #fff;
         display: flex;
         flex-direction: column;
+        text-align: center;
     }
     .map img {
     width: 100%;
