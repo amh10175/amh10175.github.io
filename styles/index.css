@@ -65,20 +65,20 @@
         text-align: center;
         font-size: 120px;
         letter-spacing: 3px;
-        margin: 5px;
+        margin: 2px;
     }
     h3 {
         font-family: 'Jomhuria', sans-serif;
         color: #8C2639;
         font-size: 70px;
-        margin: 10px 0px;
+        margin: 10px 0px 0px;
         letter-spacing: 2px;
     }
     h4 {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 26px;
-        margin: 0;
-        padding: 0;
+        margin: 0 30px;
+        padding-: 0;
     }
     p  {
         font-family: Arial, Helvetica, sans-serif;
@@ -94,7 +94,7 @@
       flex-direction: column;
       align-items: flex-start;
       height: auto;
-      margin: 0;
+      margin: 0px;
       box-sizing: border-box;
       flex: 0 0 calc(50% - 10px);
     }
