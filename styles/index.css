@@ -141,7 +141,7 @@
     text-decoration: none;
 }
 
-.social-link img {
+.grid > div .social-link img {
     display: block;
     width: 50px;
     height: 50px;
@@ -154,6 +154,10 @@
         background-color: #1597A8;
         padding: 50px;
         margin: 50px 0;
+    }
+    .map h1 {
+        margin: 0;
+        line-height: 100px;
     }
     .map-text {
         color: #fff;
