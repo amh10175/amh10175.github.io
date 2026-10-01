@@ -8,6 +8,11 @@
             display: block; 
             padding: 1em;
         }
+        #primary-nav a:hover {color:white;}
+        #primary-nav a[aria-current="page"] {
+            color: #ffd166;
+            background-color: #444;
+        }
         #toggle-nav-btn {
             display: none;
             position: absolute;
