@@ -1,0 +1,34 @@
+  @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,800&family=DM+Sans:wght@400;500;600;700&display=swap");
+
+  :root {
+  --ink: #12110f;
+  --paper: #f3f0e9;
+  --orange: #ff5c00;
+  --orange-light: #ff8a00;
+  --blue: #bfe9ff;
+  --blue-strong: #1564ff;
+  --red: #ff4c42;
+  --red-dark: #9a1512;
+  --white: #fffdf8;
+  --display: "Barlow Condensed", sans-serif;
+  --body: "DM Sans", sans-serif;
+  }
+    body{background-color: #F3F0E9}
+    #primary-nav ul { 
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    #primary-nav li { 
+        list-style: none; 
+        display: inline-block;
+    }
+    #primary-nav a { 
+        display: inline-block;
+        display: block; 
+        padding: 1em;
+        text-decoration: none;
+        color: #000000;
+        font-size: 13px;
+        font-family: var(--body);
+    }

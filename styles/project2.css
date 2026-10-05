@@ -15,6 +15,7 @@
             background-color: #5CC9FF;
             display: block; 
             padding: 1em;
+            text-decoration: none;
         }
         #primary-nav a:hover {color:white;}
         #primary-nav a[aria-current="page"] {color: #FF4C8D;}
