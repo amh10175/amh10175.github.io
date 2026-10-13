@@ -1,4 +1,4 @@
-        body{background-color: #BEE8FC}
+        body{background-color: #d6effc}
         #primary-nav ul { 
             margin: 0;
             padding: 0;
@@ -12,7 +12,7 @@
         #primary-nav a { 
             display: inline-block;
             color: #000000;
-            background-color: #5CC9FF;
+            background-color: #5cc9ff;
             display: block; 
             padding: 1em;
             text-decoration: none;
