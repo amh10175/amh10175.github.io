@@ -1,4 +1,7 @@
-        body{background-color: #d6effc}
+        body{
+            background-color: #d6effc;
+            font-family: Arial, Helvetica, sans-serif;
+        }
         #primary-nav ul { 
             margin: 0;
             padding: 0;
@@ -41,6 +44,13 @@
             width: 100%;
             max-width: none;
         }
+        .quicktip {
+            background-color: #CCEDE7;
+            padding: 5px;
+            margin-top: 10px;
+            font-size: 24px;
+            text-align: center;
+        }
         .button-container {
             display: flex;
             justify-content: space-between;
@@ -51,7 +61,7 @@
             background-color: #D2AEFA;
             border: none;
             border-radius: 10px;
-            color: white;
+            color: rgb(0, 0, 0);
             padding: 10px 20px;
             text-align: center;
             text-decoration: none;
@@ -66,20 +76,19 @@
         .grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 2em;
+            gap: 10px;
+            margin-top: 20px;
         }
         .grid img {
             display: block;
             width: 100%;
         }
         h1 {
-            text-align: center;
             font-family: "Kavoon";
             font-size: 48px;
         }
         p {
             font-size: 24px;
-            font-family:Arial, Helvetica, sans-serif
         }
     @media (max-width: 767px) {
         #primary-nav {
