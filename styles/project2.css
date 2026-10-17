@@ -110,7 +110,7 @@
         }
         .content {
             grid-template-columns: minmax(320px, 1fr);
-            text-align: center;
+            text-align: left;
         }
         .content img {
             margin: 0 auto;
