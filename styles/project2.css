@@ -42,7 +42,7 @@
         }
         .content img {
             width: 100%;
-            max-width: none;
+            max-width: 880px;
         }
         .quicktip {
             background-color: #CCEDE7;
