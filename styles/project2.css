@@ -47,7 +47,7 @@
         .quicktip {
             background-color: #CCEDE7;
             padding: 5px;
-            margin-top: 10px;
+            margin: 40px;
             font-size: 24px;
             text-align: center;
         }
@@ -86,6 +86,7 @@
         h1 {
             font-family: "Kavoon";
             font-size: 48px;
+            margin: 40px;
         }
         p {
             font-size: 24px;
