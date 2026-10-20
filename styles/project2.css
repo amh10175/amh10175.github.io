@@ -1,16 +1,27 @@
         body{
             background-color: #d6effc;
             font-family: Arial, Helvetica, sans-serif;
+            max-width: 1440px;
+            margin: 0;
         }
-        #primary-nav ul { 
+        #primary-nav {
+            background-color: #5CC9FF;
+        }
+        #primary-nav ul {
+            display: flex;
+            align-items: center;
             margin: 0;
             padding: 0;
-            background-color: #5CC9FF;
-            text-align: right;
+        }
+        #primary-nav h2 {
+            font-family: "Kavoon", sans-serif;
+            font-size: 30px;
+            margin: 0 40px;
         }
         #primary-nav li { 
             list-style: none; 
             display: inline-block;
+            margin-right: auto;
         }
         #primary-nav a { 
             display: inline-block;
@@ -35,7 +46,6 @@
             max-width:100%;
             align-items: center;
             justify-items: center;
-            padding: 0px 40px;
         }
         .content > div {
             width: 100%;
@@ -84,7 +94,7 @@
             width: 100%;
         }
         h1 {
-            font-family: "Kavoon";
+            font-family: "Kavoon", sans-serif;
             font-size: 48px;
         }
         p {
@@ -121,7 +131,7 @@
     }
      @font-face {
         font-family: "Kavoon";
-        src: url("../../fonts/Kavoon-Regular.ttf") format("truetype");
+        src: url("../fonts/Kavoon-Regular.ttf") format("truetype");
     }
     @font-face {
         font-family: "Fredoka";
