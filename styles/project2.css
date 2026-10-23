@@ -6,22 +6,28 @@
         }
         #primary-nav {
             background-color: #5CC9FF;
+            width: 100%;
         }
-        #primary-nav ul {
+        .nav-bar {
             display: flex;
             align-items: center;
+            justify-content: space-between;
+            padding: 10px ;
+        }
+        .inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
             margin: 0;
-            padding: 0;
         }
         #primary-nav h2 {
             font-family: "Kavoon", sans-serif;
             font-size: 30px;
-            margin: 0 40px;
+            margin: 0;
         }
         #primary-nav li { 
             list-style: none; 
-            display: inline-block;
-            margin-right: auto;
         }
         #primary-nav a { 
             display: inline-block;
@@ -46,7 +52,6 @@
             max-width:100%;
             align-items: center;
             justify-items: center;
-            margin: 40px;
         }
         .content > div {
             width: 100%;
@@ -58,7 +63,7 @@
         .quicktip {
             background-color: #CCEDE7;
             padding: 5px;
-            margin: 40px;
+            margin: 10px 40px;
             font-size: 24px;
             text-align: center;
         }
@@ -97,7 +102,7 @@
         h1 {
             font-family: "Kavoon", sans-serif;
             font-size: 48px;
-            margin: 40px;
+            margin: 20px 40px;
         }
         p {
             font-size: 24px;
@@ -108,17 +113,18 @@
             grid-template-rows: 0fr;
             transition: grid-template-rows 0.5s ease-out;
         }
-        #primary-nav li {
-            display: block;
-        }
         body.nav-open #primary-nav {
             grid-template-rows: 1fr;
         }
         .inner {
-            overflow: hidden;
+            display: none;
+            flex-direction: column;
         }
         #toggle-nav-btn {
             display: block; /* display button beneath breakpoint */
+        }
+        .nav-bar {
+            position: relative;
         }
         .content {
             grid-template-columns: minmax(320px, 1fr);
