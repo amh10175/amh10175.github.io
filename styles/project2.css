@@ -46,6 +46,7 @@
             max-width:100%;
             align-items: center;
             justify-items: center;
+            margin: 40px;
         }
         .content > div {
             width: 100%;
