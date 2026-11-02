@@ -1,0 +1,54 @@
+body {
+    background-color: #fddbc4;
+    font-family:arial;
+}
+        #primary-nav ul { padding-left: 0; }
+        #primary-nav li { 
+            list-style: none; 
+            display: inline-block;
+        }
+        #primary-nav a { 
+            background-color: rgb(102, 102, 102);
+            display: block; 
+            padding: 1em;
+        }
+        #primary-nav a:hover {color:#F7A26A;}
+        #primary-nav a[aria-current="page"] {
+            color: #e85c3a;
+            background-color: #444;
+        }
+        #toggle-nav-btn {
+            display: none;
+            position: absolute;
+            right: 1em;
+            top: 1em;
+        } 
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+            max-width:100%;
+        }
+        .content img {
+            width: 100%;
+            max-width: 1440px;
+        }
+    @media (max-width: 767px) {
+        #primary-nav {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 0.5s ease-out;
+        }
+        #primary-nav li {
+            display: block;
+        }
+        body.nav-open #primary-nav {
+            grid-template-rows: 1fr;
+        }
+        .inner {
+            overflow: hidden;
+        }
+        #toggle-nav-btn {
+            display: block; /* display button beneath breakpoint */
+        }
+    }
