@@ -7,27 +7,42 @@
     <link rel="stylesheet" href="../../styles/project3.css">
 </head>
 <body>
+    <button id="toggle-nav-btn"></button>
     <nav id="primary-nav">
-        <div class="nav-bar">
-            <h2>Brews & Bonds</h2>
-            <button id="toggle-nav-btn"></button>
-        </div>
-        <ul class="inner">
+        <div class="inner">
+        <ul>
+            <li><a href="home.html">Brews & Bonds</a></li>
             <li><a href="about.html" aria-current="page">About</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="events.html">Events</a></li>
             <li><a href="hours.html">Hours</a></li>
         </ul>
+        </div>
     </nav>
      <script src="../../styles/script.js"></script>
     <h1>About</h1>
-    <p>With unwavering determination and a shared vision, Jacob and Emily poured their hearts into creating a haven for coffee lovers in Harrisburg. They meticulously designed the space, infusing it with cozy charm and a welcoming ambiance. They sought out the finest locally sourced beans, carefully selecting a variety of roasts to cater to every coffee connoisseur's palate.
-
-        The day finally arrived when they proudly opened the doors of their coffee shop, aptly named "Brews & Bonds." From the very beginning, the aroma of freshly brewed coffee filled the air, drawing in curious locals and wanderers alike. The cozy interior, adorned with San Francisco- inspired artwork and memorabilia, became a sanctuary where people could gather, connect, and forge new friendships.</p>
+    <p>With unwavering determination and a shared vision, Jacob and Emily poured their hearts into creating a haven for coffee lovers in Harrisburg. They meticulously designed the space, infusing it with cozy charm and a welcoming ambiance. They sought out the finest locally sourced beans, carefully selecting a variety of roasts to cater to every coffee connoisseur's palate.</p>
+    <p>The day finally arrived when they proudly opened the doors of their coffee shop, aptly named "Brews & Bonds." From the very beginning, the aroma of freshly brewed coffee filled the air, drawing in curious locals and wanderers alike. The cozy interior, adorned with San Francisco- inspired artwork and memorabilia, became a sanctuary where people could gather, connect, and forge new friendships.</p>
     <img src="" alt="">
-    <p>Word quickly spread throughout Harrisburg about the coffee shop with an intriguing origin story. Brews & Bonds became a beloved fixture in the community, known not only for its exceptional coffee but also for the warmth and hospitality Jacob and Emily extended to each and every visitor. The couple poured their hearts into building relationships with their customers, learning their stories, and creating a space where everyone felt like family.
-
-        Today, Brews & Bonds stands as a testament to the enduring power of love, passion, and a good cup of coffee. Jacob and Emily's journey from San Francisco to Harrisburg, guided by their shared love for coffee, has left an indelible mark on the local community. Their story continues to inspire coffee enthusiasts and dreamers alike, reminding us that sometimes, the perfect blend of love and passion can create something truly extraordinary.</p>
+    <p>Word quickly spread throughout Harrisburg about the coffee shop with an intriguing origin story. Brews & Bonds became a beloved fixture in the community, known not only for its exceptional coffee but also for the warmth and hospitality Jacob and Emily extended to each and every visitor. The couple poured their hearts into building relationships with their customers, learning their stories, and creating a space where everyone felt like family.</p>
+    <p>Today, Brews & Bonds stands as a testament to the enduring power of love, passion, and a good cup of coffee. Jacob and Emily's journey from San Francisco to Harrisburg, guided by their shared love for coffee, has left an indelible mark on the local community. Their story continues to inspire coffee enthusiasts and dreamers alike, reminding us that sometimes, the perfect blend of love and passion can create something truly extraordinary.</p>
     <img src="" alt="">
+<script>
+    // Perform this after the window has loaded
+    window.onload = () => {
+      // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+      const toggleNavBtn = document.getElementById('toggle-nav-btn');
+      toggleNavBtn.innerHTML = '&#9776;';
+
+      // Tell button to do something on click
+      toggleNavBtn.addEventListener('click', () => {
+        // toggle the body's class attribute
+        document.body.classList.toggle('nav-open');
+        toggleNavBtn.innerHTML = document.body.classList.contains('nav-open')
+          ? '&#x2715'
+          : '&#9776;';
+      });
+    };
+  </script>
 </body>
 </html>
