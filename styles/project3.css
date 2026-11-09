@@ -36,24 +36,51 @@ body {
             gap: 2em;
             max-width:100%;
         }
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+            max-width:100%;
+        }
+        .coffee-list {
+            background-color: #F7A26A;
+            padding-top: 1em;
+            list-style: none;
+        }
         .events {
             display: grid;
             grid-template-columns: 1fr 3fr;
             gap: 2em;
             max-width:100%;
         }
+        .color {
+            background-color: #F7A26A;
+            padding: 1em;
+        }
+        .event {
+            display: flex;
+            gap: 1em;
+    
+        }
+        .time {
+            min-width: 120px;
+        }
         .content img {
             width: 100%;
             max-width: 1440px;
         }
-        button{
+        .button-link{
             color: #fddbc4;
             background-color: #1E7A7B;
             border: none;
             padding: 10px;
             border-radius: 100px;
+            text-decoration: none;
         }
-        h1 {font-family: "Abril Fatface"}
+        ul {
+            list-style: none;
+        }
+        h1, h2 {font-family: "Abril Fatface"}
     @media (max-width: 767px) {
         #primary-nav {
             display: grid;
