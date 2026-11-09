@@ -80,7 +80,10 @@ body {
         ul {
             list-style: none;
         }
-        h1, h2 {font-family: "Abril Fatface"}
+        h1, h2 {
+            font-family: "Abril Fatface";
+            color: #4b3b3a;
+        }
     @media (max-width: 767px) {
         #primary-nav {
             display: grid;
