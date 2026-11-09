@@ -99,4 +99,10 @@ body {
         #toggle-nav-btn {
             display: block;
         }
+        .content {
+            grid-template-columns: 1fr;
+        }
+        .about {
+            grid-template-columns: 1fr;
+        }
     }
