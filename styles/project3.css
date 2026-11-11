@@ -2,15 +2,26 @@ body {
     background-color: #fddbc4;
     font-family:arial;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 0 auto;
 }
         #primary-nav {
             background-color: #1E7A7B;
             border-radius: 100px;
         }
-        #primary-nav ul { padding: 0 40px; }
+        #primary-nav ul { 
+            padding: 0 40px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
         #primary-nav li { 
             list-style: none; 
             display: inline-block;
+            text-align: center;
         }
         #primary-nav a { 
             background-color: #1E7A7B;
@@ -84,6 +95,28 @@ body {
             font-family: "Abril Fatface";
             color: #4b3b3a;
         }
+        .site-footer {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 2em;
+            margin-top: auto;
+            padding: 2em;
+            color: #fddbc4;
+            background-color: #4b3b3a;
+        }
+        .site-footer h2 {
+            margin-top: 0;
+            color: #f7a26a;
+        }
+        .site-footer ul {
+            padding: 0;
+        }
+        .site-footer a {
+            color: #fddbc4;
+        }
+        .site-footer a:hover {
+            color: #f7a26a;
+        }
     @media (max-width: 767px) {
         #primary-nav {
             display: grid;
@@ -107,5 +140,10 @@ body {
         }
         .about {
             grid-template-columns: 1fr;
+        }
+        .site-footer {
+            grid-template-columns: 1fr;
+            gap: 1em;
+            padding: 0;
         }
     }
